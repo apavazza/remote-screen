@@ -7,6 +7,10 @@ Secure VNC Access via Temporary SSH Tunnel
 
 This script securely exposes a virtual VNC desktop on a Linux host by creating a temporary SSH tunnel user and running a minimal SSH server on a custom port.
 
+Tested on:
+- Fedora KDE (Wayland session)
+- Wayland-compatible: Works with `krfb-virtualmonitor` on KDE Plasma using Wayland.
+
 ## Features
 
 - Creates a limited user for SSH tunneling (no shell access).
@@ -26,16 +30,16 @@ This script securely exposes a virtual VNC desktop on a Linux host by creating a
 
 ## Usage
 
-1. Mark the script as executable
+1. Mark the script as executable:
   
     ```bash
     chmod +x remote_screen.sh
     ```
 
-1. Run the script as root or with sudo:
+1. Run the script:
 
     ```bash
-    sudo ./remote_screen.sh
+    ./remote_screen.sh
     ```
 
 1. Follow the printed instructions to create an SSH tunnel from your client:
