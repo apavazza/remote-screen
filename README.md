@@ -45,7 +45,7 @@ Tested on:
 1. Follow the printed instructions to create an SSH tunnel from your client:
 
     ```bash
-    ssh -L 5900:localhost:5900 vncuser@ -p 2222
+    ssh -L 5900:localhost:5900 vncuser@<HOST_IP> -p 2222
     ```
 
 1. Connect your VNC viewer to `localhost:5900` using the VNC password.
